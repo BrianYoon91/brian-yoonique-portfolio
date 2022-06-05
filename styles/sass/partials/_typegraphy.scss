@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+
+$headerFont: 'Rubik Puddles', sans-serif;
+$subFont: 'Waiting for the Sunrise', sans-serif;
+$background:  #eff0f3;
+$headingColor:  #ff8e3c;
+
+body {
+    background-color: $background;
+    font-size: 125%;
+}
+
+header {
+    height: 100vh;
+}
+
+h1, h2 {
+    font-family: $headerFont;
+    color: $headingColor;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.heading {
+	animation-name: tossing;
+	-webkit-animation-name: tossing;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-4deg);	
+	}
+	50% {
+		transform: rotate(4deg);
+	}
+	100% {
+		transform: rotate(-4deg);	
+	}						
+}
+
+@-webkit-keyframes tossing {
+	0% {
+		-webkit-transform: rotate(-4deg);	
+	}
+	50% {
+		-webkit-transform: rotate(4deg);
+	}
+	100% {
+		-webkit-transform: rotate(-4deg);	
+	}				
+}
+
+i {
+    color: $headingColor;
+    display: inline-block;
+    opacity: 0.5;
+}

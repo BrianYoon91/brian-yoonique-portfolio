@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.icons {
+    display: flex;
+    width: 100%;
+
+}
