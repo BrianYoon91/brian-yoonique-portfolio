@@ -20,45 +20,40 @@ h1, h2 {
     color: $headingColor;
     letter-spacing: 5px;
     text-align: center;
+	font-size: 4rem;
 }
 
 .heading {
-	animation-name: tossing;
-	-webkit-animation-name: tossing;	
+	// visibility: visible !important;
 
-	animation-duration: 2.5s;	
-	-webkit-animation-duration: 2.5s;
-
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
+	animation: 	expandUp 1.5s ease-in-out 1 both,
+				floating 1.2s ease-in 1.5s infinite;
 }
 
-@keyframes tossing {
+@keyframes expandUp {
 	0% {
-		transform: rotate(-4deg);	
+		transform: translateY(100%) scale(0.6) scaleY(0.5);
+	}
+	60%{
+		transform: translateY(-7%) scaleY(1.12);
+	}
+	75%{
+		transform: translateY(3%);
+	}	
+	100% {
+		transform: translateY(0%) scale(1) scaleY(1);
+	}	
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
 	}
 	50% {
-		transform: rotate(4deg);
-	}
+		transform: translateY(8%);	
+	}	
 	100% {
-		transform: rotate(-4deg);	
-	}						
+		transform: translateY(0%);
+	}			
 }
 
-@-webkit-keyframes tossing {
-	0% {
-		-webkit-transform: rotate(-4deg);	
-	}
-	50% {
-		-webkit-transform: rotate(4deg);
-	}
-	100% {
-		-webkit-transform: rotate(-4deg);	
-	}				
-}
-
-i {
-    color: $headingColor;
-    display: inline-block;
-    opacity: 0.5;
-}

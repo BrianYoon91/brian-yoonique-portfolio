@@ -1,16 +1,102 @@
 header {
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
-    .wrapper {
-        display: flex;
-        justify-content: center;
+}
+
+.heading {
+    position: relative;
+
+    i {
+        color: $headingColor;
+        display: inline-block;
+        opacity: 0.5;
+        position: absolute;
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        margin-bottom: 0px;
+    }
+    .fa-drum {
+        top: 0px;
+        animation: rotate-center 3s linear infinite both;
+    }
+
+    .fa-pizza-slice {
+        right: 0px;
+        animation: rotate-center 3s linear infinite both;
+    }
+
+    .fa-galactic-republic {
+        right: 0px;
+        top: 0px;
+        animation: rotate-center 3s linear infinite both;
+    }
+
+    .fa-cat {
+        left: 0px;
+        animation: rotate-center 3s linear infinite both;
+    }
+
+}
+
+.navMenu {
+    top: 0;
+    right: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 3000;
+
+    .hamburger {
+        opacity: 1;
+        cursor: pointer;
+        display: block;
+        border: none;
+        color: $headingColor;
+        font-size: 2rem;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+
+    }
+
+    .hamburger.active {
+        color:white;
+    }
+
+    .menu {
+        background-color: $headingColor;
+        padding: 0;
+        width: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+        flex-direction: column;
+        margin: 0;
+    }
+
+
+    li {
+        list-style-type: none;
+        a {
+            color: white;       
+        }
     }
 }
 
-.icons {
-    display: flex;
-    width: 100%;
 
-}
+@keyframes rotate-center {
+        0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        }
+        100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+        }
+    }
