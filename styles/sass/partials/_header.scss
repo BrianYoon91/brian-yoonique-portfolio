@@ -58,8 +58,10 @@ header {
         position: absolute;
         right: 30px;
         top: 20px;
+        padding: 5px;
 
     }
+
 
     .hamburger.active {
         color:white;
@@ -69,23 +71,52 @@ header {
         background-color: $headingColor;
         padding: 0;
         width: 0;
+        display: none;
+
+    }
+    
+    .menu.active {
         width: 100%;
         height: 100vh;
-        display: none;
-    }
-
-    .menu.active {
-        display: block;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0;
     }
 
 
     li {
         list-style-type: none;
+        padding: 10px;
+        position: relative;
+
         a {
-            color: white;       
+            color: white;    
+            text-decoration: none; 
         }
+
+            a::before {
+                content: '';
+                position: absolute;
+                background-color: white;
+                height: 5px;
+                width: 100%;
+                border-radius: 4px;
+                bottom: 0;
+                left: 0;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform .3s ease-in-out;
+            }
+
+            a:hover::before,
+            a:focus::before {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+        
+    
     }
 }
 
