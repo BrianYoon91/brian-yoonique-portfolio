@@ -1,0 +1,56 @@
+$secondBackground: #fffffe;
+
+.aboutMe {
+    background-color: $secondBackground;
+    padding: 100px 0;
+
+    .wrapper {
+        display: flex;
+    }
+
+    .aboutMeWording {
+        flex-basis: 50%;
+        margin-right: 20px;
+        
+        h3 {
+            position: relative;
+        }
+
+        h3::before {
+            content: '';
+            position: absolute;
+            background-color: #ff8e3c;
+            height: 5px;
+            width: 100%;
+            border-radius: 4px;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+
+        h3:hover::before,
+        h3:focus::before {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    }
+
+    .profilePicture{
+        flex-basis: 50%;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+
+        }
+    }
+}
+
+

@@ -1,26 +1,43 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
 
 $headerFont: 'Rubik Puddles', sans-serif;
 $subFont: 'Waiting for the Sunrise', sans-serif;
+$paragraph: 'Quicksand', sans-serif;
 $background:  #eff0f3;
 $headingColor:  #ff8e3c;
+$paragraphColor: #2a2a2a;
+$subHeadingColor: #0d0d0d;
 
 body {
     background-color: $background;
     font-size: 125%;
 }
 
-header {
-    height: 100vh;
-}
 
 h1, h2 {
     font-family: $headerFont;
     color: $headingColor;
     letter-spacing: 5px;
     text-align: center;
-	font-size: 4rem;
+	font-size: 5rem;
+}
+
+h3 {
+	font-family: $subFont;
+	color: $headingColor;
+	font-size: 3rem;
+	margin-top: 0;
+}
+
+p {
+	font-family: $paragraph;
+	color: $paragraphColor;
+	font-weight: 500;
+
 }
 
 a {
@@ -28,37 +45,4 @@ a {
 	font-size: 3rem;
 }
 
-.heading {
-	// visibility: visible !important;
-
-	animation: 	expandUp 1.5s ease-in-out 1 both,
-				floating 1.2s ease-in 1.5s infinite;
-}
-
-@keyframes expandUp {
-	0% {
-		transform: translateY(100%) scale(0.6) scaleY(0.5);
-	}
-	60%{
-		transform: translateY(-7%) scaleY(1.12);
-	}
-	75%{
-		transform: translateY(3%);
-	}	
-	100% {
-		transform: translateY(0%) scale(1) scaleY(1);
-	}	
-}
-
-@keyframes floating {
-	0% {
-		transform: translateY(0%);	
-	}
-	50% {
-		transform: translateY(8%);	
-	}	
-	100% {
-		transform: translateY(0%);
-	}			
-}
 
