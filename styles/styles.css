@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -239,6 +240,10 @@ header {
   width: 80%;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   background-color: #eff0f3;
   font-size: 125%;
@@ -257,6 +262,10 @@ h3 {
   color: #ff8e3c;
   font-size: 3rem;
   margin-top: 0;
+}
+
+li p {
+  font-family: "Gochi Hand", sans-serif;
 }
 
 p {
@@ -507,7 +516,7 @@ header {
 
 .aboutMe {
   background-color: #fffffe;
-  padding: 100px 0;
+  padding: 200px 0;
 }
 .aboutMe .wrapper {
   display: -webkit-box;
@@ -563,4 +572,46 @@ header {
   width: 100%;
   height: auto;
   border-radius: 20px;
+}
+
+.mySkills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 100px 0;
+}
+.mySkills h3 {
+  text-align: center;
+}
+.mySkills .skillsIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.mySkills .skillsIcon i {
+  font-size: 3.5rem;
+}
+.mySkills .skillsIcon i:hover {
+  color: #ff8e3c;
+}
+.mySkills .skillsIcon li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }

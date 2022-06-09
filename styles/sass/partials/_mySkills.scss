@@ -1,0 +1,35 @@
+$headingColor:  #ff8e3c;
+
+.mySkills {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+
+    h3 {
+        text-align: center;
+    }
+
+
+    .skillsIcon {
+        display: flex;
+        flex-wrap: wrap;
+
+        i {
+            font-size: 3.5rem;
+        }
+
+        i:hover {
+            color: $headingColor;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            flex-basis: 20%;
+        }
+
+    }
+}
+
