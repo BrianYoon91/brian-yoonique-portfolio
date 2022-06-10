@@ -3,23 +3,32 @@ $headingColor:  #ff8e3c;
 .mySkills {
     display: flex;
     flex-direction: column;
-    margin: 100px 0;
+    margin: 50px 0;
 
     h3 {
+        
         text-align: center;
+
+        .fa-galactic-republic:hover {
+            animation: rotateflip 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
     }
 
 
     .skillsIcon {
         display: flex;
         flex-wrap: wrap;
+        padding: 0;
 
         i {
             font-size: 3.5rem;
+
         }
 
         i:hover {
             color: $headingColor;
+            animation: rotateflip 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
         }
 
         li {
@@ -33,3 +42,25 @@ $headingColor:  #ff8e3c;
     }
 }
 
+    @-webkit-keyframes rotateflip {
+        0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+        }
+        100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+        }
+    }
+
+    @keyframes rotateflip {
+        0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+        }
+        100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+        }
+    }
+    

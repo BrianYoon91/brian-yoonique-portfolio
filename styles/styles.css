@@ -234,6 +234,12 @@ header {
   height: 100vh;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -257,14 +263,26 @@ h1, h2 {
   font-size: 5rem;
 }
 
-h3 {
+h3, h4 {
   font-family: "Waiting for the Sunrise", sans-serif;
   color: #ff8e3c;
   font-size: 3rem;
   margin-top: 0;
 }
 
-li p {
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li p, li a, li {
   font-family: "Gochi Hand", sans-serif;
 }
 
@@ -274,7 +292,7 @@ p {
   font-weight: 500;
 }
 
-a {
+.menu a {
   font-family: "Waiting for the Sunrise", sans-serif;
   font-size: 3rem;
 }
@@ -531,30 +549,29 @@ header {
 .aboutMe .aboutMeWording h3 {
   position: relative;
 }
-.aboutMe .aboutMeWording h3::before {
-  content: "";
-  position: absolute;
-  background-color: #ff8e3c;
-  height: 5px;
-  width: 100%;
-  border-radius: 4px;
-  bottom: 0;
-  left: 0;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+.aboutMe .aboutMeWording h3 i:hover {
+  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
-.aboutMe .aboutMeWording h3:hover::before,
-.aboutMe .aboutMeWording h3:focus::before {
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+@-webkit-keyframes rotateflip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+@keyframes rotateflip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
 }
 .aboutMe .profilePicture {
   -ms-flex-preferred-size: 50%;
@@ -568,9 +585,6 @@ header {
           align-items: center;
 }
 .aboutMe .profilePicture img {
-  display: block;
-  width: 100%;
-  height: auto;
   border-radius: 20px;
 }
 
@@ -582,10 +596,14 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 100px 0;
+  margin: 50px 0;
 }
 .mySkills h3 {
   text-align: center;
+}
+.mySkills h3 .fa-galactic-republic:hover {
+  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .mySkills .skillsIcon {
   display: -webkit-box;
@@ -593,12 +611,15 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0;
 }
 .mySkills .skillsIcon i {
   font-size: 3.5rem;
 }
 .mySkills .skillsIcon i:hover {
   color: #ff8e3c;
+  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .mySkills .skillsIcon li {
   display: -webkit-box;
@@ -614,4 +635,111 @@ header {
   margin: 20px;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+}
+
+@-webkit-keyframes rotateflip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+@keyframes rotateflip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+.myProjects {
+  background-color: #fffffe;
+  padding: 100px 0;
+}
+.myProjects i:hover {
+  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@-webkit-keyframes rotateflip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+@keyframes rotateflip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+
+.projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+.projectContainer h4 {
+  border-bottom: 2px groove #d9376e;
+}
+.projectContainer ul {
+  padding: 0;
+  margin: 0;
+}
+.projectContainer .projectText {
+  width: 40%;
+}
+.projectContainer .projectText .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projectContainer .projectText .skills li {
+  padding: 10px;
+  background-color: #ff8e3c;
+  color: white;
+  margin-right: 10px;
+}
+.projectContainer .projectText .liveSites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.projectContainer .projectText .liveSites li {
+  margin-right: 10px;
+}
+.projectContainer .projectText .liveSites li a {
+  color: white;
+  padding: 10px;
+  background-color: #d9376e;
+  display: inline-block;
+  border-radius: 10px;
+}
+.projectContainer .projectText .liveSites li a:hover, .projectContainer .projectText .liveSites li a:focus {
+  background-color: #3da9fc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.projectContainer .projectImage {
+  width: 55%;
+}
+.projectContainer .projectImage img {
+  border-radius: 20px;
 }

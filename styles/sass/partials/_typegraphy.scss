@@ -28,14 +28,26 @@ h1, h2 {
 	font-size: 5rem;
 }
 
-h3 {
+h3, h4 {
 	font-family: $subFont;
 	color: $headingColor;
 	font-size: 3rem;
 	margin-top: 0;
 }
 
-li p {
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+li p, li a, li {
 	font-family: $icons;
 }
 
@@ -43,10 +55,9 @@ p {
 	font-family: $paragraph;
 	color: $paragraphColor;
 	font-weight: 500;
-
 }
 
-a {
+.menu a {
 	font-family: $subFont;
 	font-size: 3rem;
 }

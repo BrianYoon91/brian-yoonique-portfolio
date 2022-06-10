@@ -1,0 +1,96 @@
+$secondBackground: #fffffe;
+$headingColor:  #ff8e3c;
+
+.myProjects {
+    background-color: $secondBackground;
+    padding: 100px 0;
+
+    i:hover {
+        animation: rotateflip 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+    }
+
+    @-webkit-keyframes rotateflip {
+        0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+        }
+        100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+        }
+    }
+
+    @keyframes rotateflip {
+        0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+        }
+        100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+        }
+    }
+}
+
+.projectContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    h4 {
+        border-bottom: 2px groove #d9376e;
+    }
+
+
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .projectText {
+        width: 40%;
+
+        .skills {
+            display: flex;
+
+            li {
+                padding: 10px;
+                background-color: $headingColor;
+                color: white;
+                margin-right: 10px;
+            }
+        }
+
+        .liveSites {
+            display: flex;
+            margin-top: 20px;
+
+            li {
+                margin-right: 10px;
+                
+                a {
+                    color: white; 
+                    padding: 10px;
+                    background-color: #d9376e;
+                    display: inline-block;
+                    border-radius: 10px;
+                }
+
+                a:hover, a:focus {
+                    background-color: #3da9fc;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+
+    .projectImage {
+        width: 55%;
+        
+        img {
+            border-radius: 20px;
+        }
+    }
+}

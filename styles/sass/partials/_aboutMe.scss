@@ -14,26 +14,34 @@ $secondBackground: #fffffe;
         
         h3 {
             position: relative;
+
+            i:hover {
+                animation: rotateflip 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+            }
         }
 
-        h3::before {
-            content: '';
-            position: absolute;
-            background-color: #ff8e3c;
-            height: 5px;
-            width: 100%;
-            border-radius: 4px;
-            bottom: 0;
-            left: 0;
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: transform .3s ease-in-out;
-        }
 
-        h3:hover::before,
-        h3:focus::before {
-            transform-origin: left;
-            transform: scaleX(1);
+        @-webkit-keyframes rotateflip {
+            0% {
+            -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+            }
+            100% {
+            -webkit-transform: rotateX(-360deg);
+                    transform: rotateX(-360deg);
+            }
+        }
+    
+        @keyframes rotateflip {
+            0% {
+            -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+            }
+            100% {
+            -webkit-transform: rotateX(-360deg);
+                    transform: rotateX(-360deg);
+            }
         }
     }
 
@@ -44,9 +52,7 @@ $secondBackground: #fffffe;
         align-items: center;
 
         img {
-            display: block;
-            width: 100%;
-            height: auto;
+            
             border-radius: 20px;
 
         }
