@@ -250,6 +250,10 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   background-color: #eff0f3;
   font-size: 125%;
@@ -282,7 +286,8 @@ a {
   text-decoration: none;
 }
 
-li p, li a, li {
+li p, li a, li, button, input, textarea,
+footer p {
   font-family: "Gochi Hand", sans-serif;
 }
 
@@ -742,4 +747,113 @@ header {
 }
 .projectContainer .projectImage img {
   border-radius: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.projectContainer .projectImage img:hover {
+  box-shadow: 0px 13px 18px 0px #d9376e;
+  -webkit-box-shadow: 0px 13px 18px 0px #d9376e;
+  -moz-box-shadow: 0px 13px 18px 0px #d9376e;
+}
+
+.forms .wrapper {
+  padding: 70px 0;
+}
+.forms i:hover {
+  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  color: #d9376e;
+}
+@-webkit-keyframes rotateflip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+@keyframes rotateflip {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactFlex .contactTextContainer {
+  width: 45%;
+}
+.contactFlex .contactTextContainer p {
+  margin-top: 0;
+}
+.contactFlex .formContainer {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactFlex .formContainer input, .contactFlex .formContainer textarea {
+  width: 100%;
+  border: 1px solid #ff8e3c;
+}
+.contactFlex .formContainer input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.contactFlex .formContainer textarea {
+  resize: none;
+}
+.contactFlex .formContainer .button {
+  display: block;
+  border: none;
+  background-color: #d9376e;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contactFlex .formContainer .button:hover, .contactFlex .formContainer .button:focus {
+  background-color: #3da9fc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.socialIcons li {
+  margin-right: 20px;
+}
+.socialIcons li i {
+  font-size: 3rem;
+  color: #ff8e3c;
+}
+
+footer {
+  background-color: #ff8e3c;
+}
+footer p {
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 5px 0;
 }

@@ -1,5 +1,6 @@
 $secondBackground: #fffffe;
 $headingColor:  #ff8e3c;
+$accentColor: #d9376e;
 
 .myProjects {
     background-color: $secondBackground;
@@ -39,7 +40,7 @@ $headingColor:  #ff8e3c;
     margin-bottom: 50px;
 
     h4 {
-        border-bottom: 2px groove #d9376e;
+        border-bottom: 2px groove $accentColor;
     }
 
 
@@ -73,7 +74,7 @@ $headingColor:  #ff8e3c;
                 a {
                     color: white; 
                     padding: 10px;
-                    background-color: #d9376e;
+                    background-color: $accentColor;
                     display: inline-block;
                     border-radius: 10px;
                 }
@@ -89,8 +90,18 @@ $headingColor:  #ff8e3c;
     .projectImage {
         width: 55%;
         
+
         img {
-            border-radius: 20px;
+            border-radius: 20px; 
+            transition: all 0.5s;         
         }
+
+        img:hover { 
+            box-shadow:  0px 13px 18px 0px #d9376e;
+            -webkit-box-shadow:  0px 13px 18px 0px #d9376e;
+            -moz-box-shadow:  0px 13px 18px 0px #d9376e;
+        }
+
+
     }
 }

@@ -1,11 +1,33 @@
 const menuButton = document.querySelector('.hamburger');
-const menuShow = document.querySelector('.menu');
-const changeIcon = document.getElementsByClassName('')
+const menu = document.querySelector('.menu');
+const menuLinks = document.querySelectorAll('.menuLinks');
+const menuIcon = document.querySelector('.fa-solid');
 
-menuButton.addEventListener('click', (e) => {
 
-    menuShow.classList.toggle('active');
+menuButton.addEventListener('click', () => {
+    menu.classList.toggle('active');
     menuButton.classList.toggle('active');
-    e.target.classList.toggle('fa-square-xmark');
-    e.target.classList.toggle('fa-bars');
+    menuIcon.classList.toggle('fa-square-xmark');
+    menuIcon.classList.toggle('fa-bars');
+
+
+    
+});
+
+menuLinks.forEach((e)=>{
+
+    e.addEventListener('click', ()=>{
+        
+        menu.classList.toggle('active');
+        menuButton.classList.toggle('active');
+        menuIcon.classList.toggle('fa-square-xmark');
+        menuIcon.classList.toggle('fa-bars');
+
+    })
 })
+
+
+
+
+
+

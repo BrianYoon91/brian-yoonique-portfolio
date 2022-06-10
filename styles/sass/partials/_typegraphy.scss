@@ -47,7 +47,8 @@ a {
 	text-decoration: none;
 }
 
-li p, li a, li {
+li p, li a, li, button, input, textarea,
+footer p {
 	font-family: $icons;
 }
 
