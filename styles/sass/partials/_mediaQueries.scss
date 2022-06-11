@@ -1,0 +1,224 @@
+
+@media (max-width: 996px) {
+    .navMenu .hamburger {
+        right: 10px;
+    }
+
+    header {
+        height: 70vh;
+
+        h1, h2 {
+            font-size: 4rem;
+        }
+
+        .heading {
+            i {
+            font-size: 2rem;
+            
+            }
+        }
+            
+        .downArrow {
+            font-size: 2rem;
+            left: 45%;
+        }
+    }
+
+    .aboutMe {
+
+        padding: 50px 0;
+
+        .wrapper {
+            flex-direction: column;
+        }
+
+        .aboutMeWording {
+            margin: 0;
+
+            h3 {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .profilePicture {
+            margin: 0;
+        }
+
+    }
+
+    .mySkills {
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .skillsIcon {
+            justify-content: space-evenly;
+
+            li {
+                margin: 5px;
+                flex-basis: 30%;
+                p {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                i {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+
+    .myProjects {
+        padding: 50px 0;
+
+        h3 {
+            font-size: 2.1rem;
+            text-align: center;
+        }
+
+        .projectContainer:nth-child(2n) {
+            flex-direction: column;
+        } 
+
+        .projectContainer:nth-child(2n+1) {
+            flex-direction: column-reverse;
+        } 
+
+        .projectText {
+            width: 100%;
+
+            .skills {
+                flex-wrap: wrap;
+
+                li {
+                    margin-top: 10px;
+                }
+            }
+
+            p {
+                font-size: 1rem; 
+            }
+
+            li p, li a, li, button, input, textarea,
+            footer p {
+                font-size: 1rem;
+
+            }
+        }
+
+        .projectImage {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .forms {
+    
+        .wrapper {
+            padding: 30px 0;
+        }
+    
+        h3 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    
+        .contactFlex {
+    
+            flex-direction: column;
+    
+            .contactTextContainer {
+                width: 100%;
+    
+                p {
+                    font-size: 1rem;
+    
+                }
+    
+                p:nth-child(2) {
+                    text-align: center;
+                }
+    
+                .socialIcons {
+                    justify-content: space-evenly;
+    
+                    i {
+                        font-size: 2.2rem;
+    
+                    }
+                }
+            }
+    
+            .formContainer {
+                width: 100%;
+    
+                button {
+                    margin-top: 10px;
+                }
+            }
+    
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navMenu .hamburger {
+        right: 5px;
+    }
+
+    header {
+        height: 64vh;
+
+        h1, h2 {
+            font-size: 2.5rem;
+        }
+
+        .heading {
+            i {
+            font-size: 1.5rem;
+            
+            }
+        }
+    }
+
+    .mySkills .skillsIcon li i {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .navMenu .hamburger {
+        right: 3px;
+    }
+
+    header {
+        height: 64vh;
+
+        h1, h2 {
+            font-size: 2rem;
+        }
+
+        .heading {
+            i {
+            font-size: 0.5rem;
+            
+            }
+        }
+    }
+
+    .mySkills .skillsIcon li i {
+        font-size: 2rem;
+    }
+}

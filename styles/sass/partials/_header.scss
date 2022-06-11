@@ -2,6 +2,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .heading {
@@ -171,9 +172,10 @@ header {
     justify-content: center;
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 48%;
     color: $headingColor;
     font-size: 3rem;
     animation: floating 1.2s ease-in 1.5s infinite;
+    
 }
 

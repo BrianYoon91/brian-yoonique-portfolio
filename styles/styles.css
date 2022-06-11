@@ -313,6 +313,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .heading {
@@ -530,7 +531,7 @@ header {
           justify-content: center;
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 48%;
   color: #ff8e3c;
   font-size: 3rem;
   -webkit-animation: floating 1.2s ease-in 1.5s infinite;
@@ -827,6 +828,7 @@ header {
   color: white;
   padding: 10px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 .contactFlex .formContainer .button:hover, .contactFlex .formContainer .button:focus {
   background-color: #3da9fc;
@@ -856,4 +858,184 @@ footer p {
   margin: 0;
   text-align: center;
   padding: 5px 0;
+}
+
+@media (max-width: 996px) {
+  .navMenu .hamburger {
+    right: 10px;
+  }
+
+  header {
+    height: 70vh;
+  }
+  header h1, header h2 {
+    font-size: 4rem;
+  }
+  header .heading i {
+    font-size: 2rem;
+  }
+  header .downArrow {
+    font-size: 2rem;
+    left: 45%;
+  }
+
+  .aboutMe {
+    padding: 50px 0;
+  }
+  .aboutMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutMe .aboutMeWording {
+    margin: 0;
+  }
+  .aboutMe .aboutMeWording h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .aboutMe .aboutMeWording p {
+    font-size: 1rem;
+  }
+  .aboutMe .profilePicture {
+    margin: 0;
+  }
+
+  .mySkills h3 {
+    font-size: 2rem;
+  }
+  .mySkills .skillsIcon {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mySkills .skillsIcon li {
+    margin: 5px;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .mySkills .skillsIcon li p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .mySkills .skillsIcon li i {
+    font-size: 3rem;
+  }
+
+  .myProjects {
+    padding: 50px 0;
+  }
+  .myProjects h3 {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  .myProjects .projectContainer:nth-child(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myProjects .projectContainer:nth-child(2n+1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .myProjects .projectText {
+    width: 100%;
+  }
+  .myProjects .projectText .skills {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .myProjects .projectText .skills li {
+    margin-top: 10px;
+  }
+  .myProjects .projectText p {
+    font-size: 1rem;
+  }
+  .myProjects .projectText li p, .myProjects .projectText li a, .myProjects .projectText li, .myProjects .projectText button, .myProjects .projectText input, .myProjects .projectText textarea,
+.myProjects .projectText footer p {
+    font-size: 1rem;
+  }
+  .myProjects .projectImage {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .forms .wrapper {
+    padding: 30px 0;
+  }
+  .forms h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .forms .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .forms .contactFlex .contactTextContainer {
+    width: 100%;
+  }
+  .forms .contactFlex .contactTextContainer p {
+    font-size: 1rem;
+  }
+  .forms .contactFlex .contactTextContainer p:nth-child(2) {
+    text-align: center;
+  }
+  .forms .contactFlex .contactTextContainer .socialIcons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .forms .contactFlex .contactTextContainer .socialIcons i {
+    font-size: 2.2rem;
+  }
+  .forms .contactFlex .formContainer {
+    width: 100%;
+  }
+  .forms .contactFlex .formContainer button {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .navMenu .hamburger {
+    right: 5px;
+  }
+
+  header {
+    height: 64vh;
+  }
+  header h1, header h2 {
+    font-size: 2.5rem;
+  }
+  header .heading i {
+    font-size: 1.5rem;
+  }
+
+  .mySkills .skillsIcon li i {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .navMenu .hamburger {
+    right: 3px;
+  }
+
+  header {
+    height: 64vh;
+  }
+  header h1, header h2 {
+    font-size: 2rem;
+  }
+  header .heading i {
+    font-size: 0.5rem;
+  }
+
+  .mySkills .skillsIcon li i {
+    font-size: 2rem;
+  }
 }
