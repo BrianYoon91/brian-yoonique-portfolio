@@ -176,6 +176,15 @@ header {
     color: $headingColor;
     font-size: 3rem;
     animation: floating 1.2s ease-in 1.5s infinite;
+
+    a {
+        color: #ff8e3c;
+    }
+
+    a:hover,
+    a:focus {
+        color: #fd6a01;
+    }
     
 }
 
