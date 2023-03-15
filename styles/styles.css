@@ -800,17 +800,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contactFlex .contactTextContainer {
-  width: 45%;
-}
-.contactFlex .contactTextContainer p {
-  margin-top: 0;
-}
-.contactFlex .formContainer {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,31 +820,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.contactFlex .formContainer input, .contactFlex .formContainer textarea {
-  width: 100%;
-  border: 1px solid #ff8e3c;
-}
-.contactFlex .formContainer input {
-  margin-bottom: 10px;
-  padding: 5px;
-}
-.contactFlex .formContainer textarea {
-  resize: none;
-}
-.contactFlex .formContainer .button {
-  display: block;
-  border: none;
-  background-color: #d9376e;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-.contactFlex .formContainer .button:hover, .contactFlex .formContainer .button:focus {
-  background-color: #3da9fc;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+.contactFlex .contactTextContainer p {
+  margin-top: 0;
 }
 
 .socialIcons {
@@ -874,7 +856,6 @@ footer p {
   .navMenu .hamburger {
     right: 10px;
   }
-
   header {
     height: 70vh;
   }
@@ -888,7 +869,6 @@ footer p {
     font-size: 2rem;
     left: 48%;
   }
-
   .aboutMe {
     padding: 50px 0;
   }
@@ -911,7 +891,6 @@ footer p {
   .aboutMe .profilePicture {
     margin: 0;
   }
-
   .mySkills h3 {
     font-size: 2rem;
   }
@@ -932,7 +911,6 @@ footer p {
   .mySkills .skillsIcon li i {
     font-size: 3rem;
   }
-
   .myProjects {
     padding: 50px 0;
   }
@@ -973,7 +951,6 @@ footer p {
     width: 100%;
     margin-bottom: 20px;
   }
-
   .forms .wrapper {
     padding: 30px 0;
   }
@@ -1015,7 +992,6 @@ footer p {
   .navMenu .hamburger {
     right: 5px;
   }
-
   header {
     height: 64vh;
   }
@@ -1025,7 +1001,6 @@ footer p {
   header .heading i {
     font-size: 1.5rem;
   }
-
   .mySkills .skillsIcon li i {
     font-size: 2rem;
   }
@@ -1034,7 +1009,6 @@ footer p {
   .navMenu .hamburger {
     right: 3px;
   }
-
   header {
     height: 64vh;
   }
@@ -1044,7 +1018,6 @@ footer p {
   header .heading i {
     font-size: 0.5rem;
   }
-
   .mySkills .skillsIcon li i {
     font-size: 2rem;
   }

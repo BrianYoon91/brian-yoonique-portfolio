@@ -38,10 +38,15 @@ $accentColor: #d9376e;
 .contactFlex {
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .contactTextContainer {
         width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         p {
             margin-top: 0;
@@ -50,40 +55,6 @@ $accentColor: #d9376e;
 
     }
 
-    .formContainer {
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-
-        input, textarea {
-            width: 100%;
-            border: 1px solid $headingColor;
-        }
-
-        input {
-            margin-bottom: 10px;
-            padding: 5px;
-        }
-
-        textarea {
-            resize: none;
-        }
-
-        .button {
-            display: block;
-            border: none;
-            background-color: $accentColor;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-
-        .button:hover, .button:focus {
-            background-color: #3da9fc;
-            transition: all 0.4s;
-        }
-    }
 
 }
 
